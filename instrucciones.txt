@@ -1,0 +1,19 @@
+                                        ## Creamos una carpeta
+                                        ## Entramos con VSCode
+py -m venv <nombre>                     ## Crea entorno virtual
+. venv/Scripts/activate"                ## Activar venv
+pip install django                      ## Instalar Django en el venv
+pip freeze >> requierements.txt         ## Ver instalados en el venv
+django-admin startproject <nombre_fol>  ## Crea proyecto,
+                                        ## Luego hay que copiar el archivo manage fuera de carpeta <nombre_fol>
+py manage.py migrate                    ## Base de datos basica de django
+py manage.py runserver                  ## Levantar servidor 
+
+
+echo "# proyectoDjango" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Chronox157/proyectoDjango.git
+git push -u origin main
